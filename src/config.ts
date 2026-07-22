@@ -25,7 +25,7 @@ export const config = {
       title: "AI Resume Analyzer",
       category: "AI / NLP",
       technologies: "Python, Streamlit, NLP, SpaCy, PyResparser",
-      image: "/images/phoenix.png",
+      image: "/images/resume-analyzer.png",
       description: "An AI-powered application built with Python and Streamlit that parses resumes, analyzes candidate profiles, extracts skills, and shortlists candidates efficiently.",
     },
     {
