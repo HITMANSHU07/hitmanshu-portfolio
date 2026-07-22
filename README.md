@@ -20,7 +20,7 @@ If you’re a developer looking for a **portfolio template** that feels premium,
 
 ---
 
-## 🧰 Tech Stack
+## 🧰  Tech Stack
 
 - **React**
 - **TypeScript**
