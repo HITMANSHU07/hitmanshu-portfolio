@@ -73,47 +73,31 @@ export const config = {
         }
     ],
     projects: [
-        {
-            id: 1,
-            title: "Drishti AI",
-            category: "AI / LLM",
-            technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/drishti.png",
-            description: "An intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support."
-        },
-        {
-            id: 2,
-            title: "VoteChain",
-            category: "Blockchain",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
-            image: "/images/votechain.png",
-            description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting."
-        },
-        {
-            id: 3,
-            title: "EIE - Earthquake Impact Estimator",
-            category: "IoT / Hardware",
-            technologies: "Arduino, C++, IoT Sensors, Python, ML, React",
-            image: "/images/eie.png",
-            description: "A practical circuit-based IoT system utilizing Arduino to predict seismic activity and estimate structural impacts."
-        },
-        {
-            id: 4,
-            title: "GameKroy",
-            category: "Full Stack",
-            technologies: "React, Node.js, MongoDB, Express, Stripe, TailwindCSS",
-            image: "/images/gamekroy.png",
-            description: "A full-featured e-commerce platform for gaming products with authentication, cart, secure payments, and admin dashboard."
-        },
-        {
-            id: 5,
-            title: "Smart AI Assistant",
-            category: "AI Assistant",
-            technologies: "Python, Speech Recognition, OpenAI API, Tkinter",
-            image: "/images/phoenix.png",
-            description: "A desktop AI assistant that controls system functions, manages tasks, answers queries, and automates workflows via voice."
-        }
-    ],
+    {
+      id: 1,
+      title: "AI Resume Builder",
+      category: "AI / Web Dev",
+      technologies: "React, Node.js, OpenAI API, TailwindCSS",
+      image: "/images/placeholder.webp",
+      description: "An intelligent AI-powered resume builder that generates professional CVs, tailors content for job roles, and optimizes ATS scores.",
+    },
+    {
+      id: 2,
+      title: "Smart AI Assistant",
+      category: "AI Assistant",
+      technologies: "Python, Speech Recognition, OpenAI API, Tkinter",
+      image: "/images/phoenix.png",
+      description: "A desktop AI assistant that controls system functions, manages tasks, answers queries, and automates workflows via voice.",
+    },
+    {
+      id: 3,
+      title: "EIE - Earthquake Impact Estimator",
+      category: "IoT / Hardware",
+      technologies: "Arduino, C++, IoT Sensors, Python, ML, React",
+      image: "/images/eie.png",
+      description: "A practical circuit-based IoT system utilizing Arduino to predict seismic activity and estimate structural impacts.",
+    }
+  ],
     contact: {
         email: "himanshujonsingh570@gmail.com",
         github: "https://github.com/HITMANSHU07",
