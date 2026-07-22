@@ -101,10 +101,10 @@ export const config = {
     contact: {
         email: "himanshujonsingh570@gmail.com",
         github: "https://github.com/HITMANSHU07",
-        linkedin: "https://linkedin.com/in/HITMANSHU07",
-        twitter: "",
-        facebook: "",
-        instagram: ""
+        linkedin: "https://www.linkedin.com/in/himanshu-kumar-39086a24b",
+        twitter: "@Himanshujo7957",
+        facebook: "Himanshu singh",
+        instagram: "himanshusingh570"
     },
     skills: {
         develop: {
