@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react";
+﻿import { PropsWithChildren } from "react";
 import "./styles/Landing.css";
 import { config } from "../config";
 
@@ -29,18 +29,12 @@ const Landing = ({ children }: PropsWithChildren) => {
               <div className="landing-h2-info">Full-Stack Developer</div>
             </h2>
           </div>
-          
-          {/* 🔴 Photo Section: Shows on both Laptop & Mobile */}
-          <div className="main-profile-photo" style={{ marginTop: "20px", display: "flex", justifyContent: "center" }}>
-            <img 
-              src="/images/mypicnbg.png.jpg" 
-              alt="Himanshu Kumar" 
-              style={{ maxWidth: "320px", width: "100%", borderRadius: "20px", objectFit: "cover", boxShadow: "0px 10px 30px rgba(0,0,0,0.5)" }} 
-            />
+          {/* Mobile photo - shows only on mobile when 3D character is hidden */}
+          <div className="mobile-photo">
+            <img src="/images/mypicnbg.png" alt={config.developer.fullName} />
           </div>
-
-          {children}
         </div>
+        {children}
       </div>
     </>
   );

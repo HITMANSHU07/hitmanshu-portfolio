@@ -1,4 +1,4 @@
-import { MdArrowOutward, MdCopyright } from "react-icons/md";
+﻿import { MdArrowOutward, MdCopyright } from "react-icons/md";
 import "./styles/Contact.css";
 import { config } from "../config";
 import gsap from "gsap";
@@ -75,51 +75,61 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h4>Social</h4>
-            <a
-              href={config.contact.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Github <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Linkedin <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Facebook <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
-            </a>
+            {config.contact.github && (
+              <a
+                href={config.contact.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="disable"
+                className="contact-social"
+              >
+                Github <MdArrowOutward />
+              </a>
+            )}
+            {config.contact.linkedin && (
+              <a
+                href={config.contact.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="disable"
+                className="contact-social"
+              >
+                Linkedin <MdArrowOutward />
+              </a>
+            )}
+            {config.contact.twitter && (
+              <a
+                href={config.contact.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="disable"
+                className="contact-social"
+              >
+                Twitter <MdArrowOutward />
+              </a>
+            )}
+            {config.contact.facebook && (
+              <a
+                href={config.contact.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="disable"
+                className="contact-social"
+              >
+                Facebook <MdArrowOutward />
+              </a>
+            )}
+            {config.contact.instagram && (
+              <a
+                href={config.contact.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="disable"
+                className="contact-social"
+              >
+                Instagram <MdArrowOutward />
+              </a>
+            )}
           </div>
           <div className="contact-box">
             <h2>

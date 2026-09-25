@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import "./styles/Loading.css";
 import { useLoading } from "../context/LoadingProvider";
+import { config } from "../config";
 
 import Marquee from "react-fast-marquee";
 
@@ -10,14 +11,18 @@ const Loading = ({ percent }: { percent: number }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [clicked, setClicked] = useState(false);
 
-  if (percent >= 100) {
-    setTimeout(() => {
-      setLoaded(true);
-      setTimeout(() => {
-        setIsLoaded(true);
-      }, 1000);
-    }, 600);
-  }
+  useEffect(() => {
+    if (percent >= 100 && !loaded) {
+      const t1 = setTimeout(() => {
+        setLoaded(true);
+        const t2 = setTimeout(() => {
+          setIsLoaded(true);
+        }, 1000);
+        return () => clearTimeout(t2);
+      }, 600);
+      return () => clearTimeout(t1);
+    }
+  }, [percent, loaded]);
 
   useEffect(() => {
     import("./utils/initialFX").then((module) => {
@@ -46,7 +51,7 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          Himanshu Kumar
+          {config.developer.fullName.replace(/\s+/g, '')}
         </a>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
@@ -96,21 +101,22 @@ export const setProgress = (setLoading: (value: number) => void) => {
   let percent: number = 0;
 
   let interval = setInterval(() => {
-    if (percent <= 50) {
-      let rand = Math.round(Math.random() * 5);
-      percent = percent + rand;
+    if (percent < 50) {
+      let rand = Math.round(Math.random() * 8) + 3;
+      percent = Math.min(percent + rand, 50);
       setLoading(percent);
     } else {
       clearInterval(interval);
       interval = setInterval(() => {
-        percent = percent + Math.round(Math.random());
+        let rand = Math.round(Math.random() * 3) + 1;
+        percent = Math.min(percent + rand, 95);
         setLoading(percent);
-        if (percent >= 100) { 
+        if (percent >= 95) {
           clearInterval(interval);
         }
-      }, 2000);
+      }, 150);
     }
-  }, 100);
+  }, 60);
 
   function clear() {
     clearInterval(interval);
@@ -122,13 +128,13 @@ export const setProgress = (setLoading: (value: number) => void) => {
       clearInterval(interval);
       interval = setInterval(() => {
         if (percent < 100) {
-          percent++;
+          percent = Math.min(percent + 4, 100);
           setLoading(percent);
         } else {
           resolve(percent);
           clearInterval(interval);
         }
-      }, 2);
+      }, 15);
     });
   }
   return { loaded, percent, clear };

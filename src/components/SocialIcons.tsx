@@ -1,4 +1,4 @@
-import {
+﻿import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
@@ -13,10 +13,12 @@ import { config } from "../config";
 const SocialIcons = () => {
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
+    if (!social) return;
 
     social.querySelectorAll("span").forEach((item) => {
       const elem = item as HTMLElement;
       const link = elem.querySelector("a") as HTMLElement;
+      if (!link) return;
 
       const rect = elem.getBoundingClientRect();
       let mouseX = rect.width / 2;
@@ -60,28 +62,36 @@ const SocialIcons = () => {
   return (
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
-        <span>
-          <a href={config.contact.github} target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-        </span>
-        <span>
-          <a href={config.contact.linkedin} target="_blank" rel="noopener noreferrer">
-            <FaLinkedinIn />
-          </a>
-        </span>
-        <span>
-          <a href={config.contact.twitter} target="_blank" rel="noopener noreferrer">
-            <FaXTwitter />
-          </a>
-        </span>
-        <span>
-          <a href={config.contact.instagram} target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
-        </span>
+        {config.contact.github && (
+          <span>
+            <a href={config.contact.github} target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+          </span>
+        )}
+        {config.contact.linkedin && (
+          <span>
+            <a href={config.contact.linkedin} target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn />
+            </a>
+          </span>
+        )}
+        {config.contact.twitter && (
+          <span>
+            <a href={config.contact.twitter} target="_blank" rel="noopener noreferrer">
+              <FaXTwitter />
+            </a>
+          </span>
+        )}
+        {config.contact.instagram && (
+          <span>
+            <a href={config.contact.instagram} target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+          </span>
+        )}
       </div>
-      <a className="resume-button" href="#">
+      <a className="resume-button" href={config.contact.github} target="_blank" rel="noopener noreferrer">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />

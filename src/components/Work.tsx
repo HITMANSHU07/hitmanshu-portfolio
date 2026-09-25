@@ -1,4 +1,4 @@
-import "./styles/Work.css";
+﻿import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -58,6 +58,7 @@ const Work = () => {
       ScrollTrigger.getById("work")?.kill();
     };
   }, []);
+
   return (
     <div className="work-section" id="work">
       <div className="work-container section-container">
@@ -88,7 +89,7 @@ const Work = () => {
               <h3>Want to see more?</h3>
               <p>Explore all of my projects and creations</p>
               <Link to="/myworks" className="see-all-btn" data-cursor="disable">
-                See All Works →
+                See All Works ➔
               </Link>
             </div>
           </div>

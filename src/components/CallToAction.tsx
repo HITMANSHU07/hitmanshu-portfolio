@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { config } from "../config";
 import "./styles/CallToAction.css";
 
@@ -7,7 +7,7 @@ const CallToAction = () => {
     <div className="cta-section">
       <div className="cta-buttons">
         <Link to="/play" className="cta-btn cta-btn-play" data-cursor="disable">
-          Play With Me →
+          Play With Me 🎮
         </Link>
         
         <a 
@@ -17,7 +17,7 @@ const CallToAction = () => {
           className="cta-btn cta-btn-hire"
           data-cursor="disable"
         >
-          Hire Me →
+          Hire Me 💼
         </a>
       </div>
     </div>

@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
 import Lenis from "lenis";
 import "./styles/Navbar.css";
+import { config } from "../config";
 
 gsap.registerPlugin(ScrollTrigger);
 export let lenis: Lenis | null = null;
@@ -63,19 +64,26 @@ const Navbar = () => {
       lenis?.destroy();
     };
   }, []);
+
+  const initials = config.developer.fullName
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .toUpperCase();
+
   return (
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          HK
+          {initials || "HK"}
         </a>
         <a
-  href="mailto:himanshujonsingh570@gmail.com"
-  className="navbar-connect"
-  data-cursor="disable"
->
-  himanshujonsingh570@gmail.com
-</a>
+          href={`mailto:${config.contact.email}`}
+          className="navbar-connect"
+          data-cursor="disable"
+        >
+          {config.contact.email}
+        </a>
         <ul>
           <li>
             <a data-href="#about" href="#about">
