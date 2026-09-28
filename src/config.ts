@@ -1,9 +1,9 @@
-﻿export const config = {
+export const config = {
     developer: {
         name: "Himanshu",
         fullName: "Himanshu Kumar",
-        title: "AI & Full-Stack Developer",
-        description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
+        title: "AI & Full-Stack Systems Engineer",
+        description: "AI & Full-Stack Engineer crafting autonomous AI agents, LLM orchestration pipelines, and high-performance interactive web applications."
     },
     social: {
         github: "https://github.com/HITMANSHU07",
@@ -12,22 +12,22 @@
     },
     about: {
         title: "About Me",
-        description: "I am a passionate AI & Full-Stack Developer from India. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and interactive web systems. Code is poetry, AI is the canvas."
+        description: "I am an ambitious AI & Full-Stack Developer based in India. I specialize in designing autonomous LLM agents, scalable microservices, and immersive web experiences. My technical stack spans Machine Learning, Deep Learning, NLP, RAG architectures, React, TypeScript, Node.js, and Python. Driven by continuous innovation — Code is poetry, AI is the canvas."
     },
     experiences: [
         {
-            position: "Learning Something New",
-            company: "Self-Development",
+            position: "Autonomous AI & Systems Engineer",
+            company: "Self-Development & Research",
             period: "2026 - Present",
             location: "India",
-            description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
+            description: "Pioneering state-of-the-art autonomous AI agents, fine-tuning LLM pipelines, and building scalable full-stack web applications with sub-second response times.",
             responsibilities: [
-                "Researching cutting-edge AI and ML technologies",
-                "Experimenting with new frameworks and tools",
-                "Contributing to open-source projects",
-                "Building innovative personal projects"
+                "Architecting autonomous multi-agent systems with LangChain and vector databases",
+                "Building high-frequency real-time web applications using React and Node.js",
+                "Optimizing machine learning model inference and deployment pipelines",
+                "Actively contributing to open-source developer tools and AI repositories"
             ],
-            technologies: ["Research", "Innovation", "Open Source", "New Tech"]
+            technologies: ["AI Agents", "LangChain", "Vector DBs", "PyTorch", "React", "TypeScript", "FastAPI"]
         },
         {
             position: "AI Engineer",
@@ -75,6 +75,14 @@
     projects: [
         {
             id: 1,
+            title: "Aether AI Agent Companion",
+            category: "Autonomous AI",
+            technologies: "Python, PyTorch, LangChain, FastAPI, React, Pinecone",
+            image: "/images/drishti.png",
+            description: "An autonomous AI paired developer environment with RAG context-aware code search, automated refactoring, and live execution stream."
+        },
+        {
+            id: 2,
             title: "Drishti AI",
             category: "AI / LLM",
             technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
@@ -82,7 +90,7 @@
             description: "An intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support."
         },
         {
-            id: 2,
+            id: 3,
             title: "VoteChain",
             category: "Blockchain",
             technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
@@ -90,7 +98,7 @@
             description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting."
         },
         {
-            id: 3,
+            id: 4,
             title: "EIE - Earthquake Impact Estimator",
             category: "IoT / Hardware",
             technologies: "Arduino, C++, IoT Sensors, Python, ML, React",
@@ -98,7 +106,7 @@
             description: "A practical circuit-based IoT system utilizing Arduino to predict seismic activity and estimate structural impacts."
         },
         {
-            id: 4,
+            id: 5,
             title: "GameKroy",
             category: "Full Stack",
             technologies: "React, Node.js, MongoDB, Express, Stripe, TailwindCSS",
@@ -106,7 +114,7 @@
             description: "A full-featured e-commerce platform for gaming products with authentication, cart, secure payments, and admin dashboard."
         },
         {
-            id: 5,
+            id: 6,
             title: "Smart AI Assistant",
             category: "AI Assistant",
             technologies: "Python, Speech Recognition, OpenAI API, Tkinter",
@@ -126,14 +134,14 @@
         develop: {
             title: "AI DEVELOPER",
             description: "Building intelligent systems & AI solutions",
-            details: "Developing AI agents, chatbots, and machine learning models using Python, TensorFlow, and PyTorch.",
-            tools: ["Python", "TensorFlow", "PyTorch", "OpenCV", "LLMs", "NLP", "AI Agents"]
+            details: "Developing autonomous AI agents, RAG vector pipelines, and machine learning models using Python, TensorFlow, PyTorch, and LangChain.",
+            tools: ["Python", "TensorFlow", "PyTorch", "LangChain", "Vector DBs", "LLMs", "NLP", "AI Agents"]
         },
         design: {
             title: "FULL-STACK",
             description: "Modern web development & scalable applications",
-            details: "Building responsive and performant web applications using React, Next.js, Node.js, and modern UI/UX principles.",
-            tools: ["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "TailwindCSS", "Git"]
+            details: "Building high-performance responsive web applications using React, Next.js, TypeScript, Node.js, and modern UI/UX design systems.",
+            tools: ["React", "Next.js", "TypeScript", "Node.js", "MongoDB", "Express", "TailwindCSS", "Git"]
         }
     }
 };
